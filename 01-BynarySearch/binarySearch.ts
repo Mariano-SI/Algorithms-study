@@ -1,12 +1,12 @@
 function binarySearch(list: Array<any>, item: any){
-    let low  = 0;
-    let high = list.length -1;
+    let low:number  = 0;
+    let high:number = list.length -1;
 
 
     while (low <= high) {
-        let mid =  Math.floor((low+high)/2);
+        let mid:number =  Math.floor((low+high)/2);
 
-        let test = list[mid];
+        let test:any = list[mid];
 
         if(test == item){
             return mid;
